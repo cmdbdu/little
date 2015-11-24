@@ -27,10 +27,10 @@ class ReadMail:
             print 'Error: object has no attr logout'
 
 def test():
-    server = 'imap.sina.com'
-    port = 143
-    username = 'cmd_du@sina.com'
-    passwd = 'chaikenadashagua'
+    server = 'mailserver'
+    port = mailport
+    username = 'username'
+    passwd = 'passwd'
 
     a = ReadMail(server,port,username,passwd)
     a.login()
