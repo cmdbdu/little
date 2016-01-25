@@ -5,7 +5,10 @@
 def refacstrip():
     string = raw_input('input a string:')
     output_str = raw_input('input a str too:')
-    print main(string, output_str)
+    if string and output_str  != "":
+        print main(string, output_str)
+    else:
+        print "InputError: str not None !!!"
 
 def main(str1,delstr):
     if str1.startswith(delstr):
